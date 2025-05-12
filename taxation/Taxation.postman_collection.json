@@ -1,0 +1,166 @@
+{
+	"info": {
+		"_postman_id": "63f7d72e-2ff6-4880-8be4-adad23f84e09",
+		"name": "Taxation",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18954250",
+		"_collection_link": "https://blue-comet-825073.postman.co/workspace/New-Team-Workspace~1d8e215c-5547-425f-9c2f-3d3de80f08ce/collection/18954250-63f7d72e-2ff6-4880-8be4-adad23f84e09?action=share&source=collection_link&creator=18954250"
+	},
+	"item": [
+		{
+			"name": "General Rate",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"traderId\": 1,\n    \"playedAmount\": 5,\n    \"odd\": 3.2\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/bet/calculateTax",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"bet",
+						"calculateTax"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "General Amount",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"traderId\": 2,\n    \"playedAmount\": 5,\n    \"odd\": 3.2\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/bet/calculateTax",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"bet",
+						"calculateTax"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Winnings Rate",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"traderId\": 3,\n    \"playedAmount\": 5,\n    \"odd\": 3.2\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/bet/calculateTax",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"bet",
+						"calculateTax"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Winnings Amount",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"traderId\": 4,\n    \"playedAmount\": 5,\n    \"odd\": 2.0\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/bet/calculateTax",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"bet",
+						"calculateTax"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Unknown Trader",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"traderId\": 999,\n    \"playedAmount\": 5,\n    \"odd\": 3.2\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/bet/calculateTax",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"bet",
+						"calculateTax"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
